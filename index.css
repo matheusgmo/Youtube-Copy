@@ -1,0 +1,49 @@
+#container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "header header"
+                         "nav main";
+    background-color: #0f0f0f;
+}
+
+header{
+    grid-area: header;
+    background-color: aqua;
+}
+
+nav{
+    grid-area: nav;
+    background-color: green;
+}
+
+#video_container{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    padding: 16px;
+    background-color: yellow;
+}
+
+.video{
+    height: 300px;
+    background-color: blue;
+}
+
+#filter_scroll{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.filter_tag{
+    width: 90px;
+    height: 28px;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    background-color: aliceblue;
+}
